@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Garrett Jones</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/layoutstyles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript (Optional, for interactive components like modals, tooltips, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Resume</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside class="common leftmenu">
+        <h3>Sections</h3>
+        <ul>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#ski">Skills</a></li>
+        </ul>
+    </aside>
+
+    <script>
+        const setTheme = theme => {
+            if (theme === 'auto') {
+                document.documentElement.setAttribute(
+                    'data-bs-theme',
+                    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+                );
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme);
+            }
+        };
+
+        // Set the theme to 'auto' on page load
+        setTheme('auto');
+    </script>
+
+    <main class="common mainbody">
+        <h1>Garrett Jones - Resume</h1>
+        <p class="justify"><strong>Mission Statement:</strong> I strive for excellence in all I do.</p>
+
+        <section id="edu">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's in USIS, Brigham Young University (Expected 2027)</li>
+                <li>Master's in MSIS, Brigham Young University (Expected 2027)</li>
+            </ul>
+        </section>
+
+        <section id="exp">
+            <h2>Experience</h2>
+            <ul>
+                <li>Peer Mentor - Assisted students in academic and personal development, providing support and guidance for achieving success.</li>
+                <li>Blockchain Developer - Developed and implemented secure blockchain solutions for enterprise clients.</li>
+                <li>Cryptographer - Designed and analyzed cryptographic algorithms for data security.</li>
+            </ul>
+        </section>
+
+        <section id="ski">
+            <h2>Skills</h2>
+            <ul>
+                <li>Database Design and Development</li>
+                <li>Entity-Relationship Diagramming</li>
+                <li>SQL (Structured Query Language)</li>
+                <li>Tableau Data Visualization</li>
+                <li>Excel (Solver, Pivot Tables, and Charts)</li>
+                <li>HTML, CSS, Bootstrap</li>
+                <li>Flowchart Diagramming</li>
+                <li>VBA Programming in Excel</li>
+            </ul>
+        </section>
+
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </main>
+
+    <aside class="common rightmenu">
+        <h3>About Me</h3>
+        <ul>
+            <li>Stand-up Comedian</li>
+            <li>Personal Trainer</li>
+            <li>Lawrence, Kansas, 66047</li>
+        </ul>
+        <p>
+            <a href="https://ymhstudios.com/yourmomshouse/" target="_blank" rel="noopener noreferrer">Your Mom's House</a>
+        </p>
+    </aside>
+
+    <footer class="common footer">
+        <p><a href="https://www.mywebsite.com" target="_blank">www.mywebsite.com</a> | &copy; 2024 Garrett Jones</p>
+    </footer>
+</body>
+</html>
+
+
+
